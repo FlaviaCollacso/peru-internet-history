@@ -1,0 +1,121 @@
+[
+  {
+    "year": 1991,
+    "duringLifetime": false,
+    "title": "The Peruvian Scientific Network (RCP) is founded",
+    "description": "Journalist Jose Soriano, sent by the organisation Union Latina, arrives in Peru and, together with universities and institutions, founds the Peruvian Scientific Network, the country's first gateway to the internet.",
+    "citation": "El Comercio, 2017; \"Red cientifica peruana,\" n.d."
+  },
+  {
+    "year": 1993,
+    "duringLifetime": false,
+    "title": "OSIPTEL is created",
+    "description": "The state creates OSIPTEL, the telecommunications regulator that still oversees the sector today.",
+    "citation": "PUCP, 2022"
+  },
+  {
+    "year": 1994,
+    "duringLifetime": false,
+    "title": "Peru's first public internet cabin opens",
+    "description": "At the Ricardo Palma Cultural Centre in Miraflores, forty computers (20 PCs, 20 Macintosh) let anyone learn to get online for free for the first time. The same year, the state privatises CPTSA and Entel, sold to the Telefonica del Peru consortium.",
+    "citation": "El Comercio, 2017; RPP Noticias, 2022; PUCP, 2022"
+  },
+  {
+    "year": 1995,
+    "duringLifetime": false,
+    "title": "Full access to the World Wide Web",
+    "description": "Peru gains a direct satellite link to the United States, giving full access to the web and real-time chat for the first time.",
+    "citation": "Wikipedia, \"Internet en el Peru,\" n.d.; RPP Noticias, 2022"
+  },
+  {
+    "year": 1996,
+    "duringLifetime": true,
+    "title": "I am born, and Frecuencia Primera goes on air",
+    "description": "The RCP publishes Peru's first digital book and Frecuencia Primera, the country's first internet radio station, goes on air, with listeners requesting live internet searches and receiving results on a floppy disk.",
+    "citation": "Wikipedia, \"Internet en el Peru,\" n.d."
+  },
+  {
+    "year": 1999,
+    "duringLifetime": true,
+    "title": "The fight for a flat internet rate begins",
+    "description": "Congress, the RCP, and Telefonica debate introducing a flat monthly rate for internet access, moving away from per-minute billing.",
+    "citation": "Wikipedia, n.d., citing Postigo Bazan, 1999"
+  },
+  {
+    "year": 2000,
+    "duringLifetime": true,
+    "title": "Only 180,000 families own a computer",
+    "description": "With home computer ownership still very low, public internet cabins become the main gateway to the internet for most Peruvians nationwide.",
+    "citation": "Wikipedia, n.d., citing La Republica, 2000"
+  },
+  {
+    "year": 2001,
+    "duringLifetime": true,
+    "title": "Flat rate arrives, and the Huascaran Project launches",
+    "description": "Telefonica introduces an official flat rate in November, on weekdays only. That October, the government launches the Huascaran Project from a school in Junin, promising internet access to hundreds of rural schools nationwide.",
+    "citation": "Wikipedia, n.d., citing Ultima Hora, 2001; Rimactampu, 2015"
+  },
+  {
+    "year": 2007,
+    "duringLifetime": true,
+    "title": "40,000 cybercafes nationwide",
+    "description": "The national statistics agency INEI records 40,000 cybercafes across the country, the peak of the cabin-based access model.",
+    "citation": "Wikipedia, n.d., citing El Comercio, 2007"
+  },
+  {
+    "year": 2012,
+    "duringLifetime": true,
+    "title": "National Fibre-Optic Backbone Law",
+    "description": "Congress passes Law No. 29904, ordering over 13,000 kilometres of fibre-optic cable to connect the whole country, not just Lima.",
+    "citation": "Congreso de la Republica del Peru, 2012"
+  },
+  {
+    "year": 2014,
+    "duringLifetime": true,
+    "title": "4G LTE arrives",
+    "description": "Movistar switches on 4G LTE in Lima on 2 January, expanding to more districts by May; Claro follows the same month. By the end of the year, 10 million Peruvians are online.",
+    "citation": "Movistar Peru, 2013, 2014; Gestion, 2015"
+  },
+  {
+    "year": 2016,
+    "duringLifetime": true,
+    "title": "The mobile phone overtakes the internet cabin",
+    "description": "After more than two decades, the mobile phone becomes Peru's main way of getting online, finally overtaking the public internet cabin.",
+    "citation": "Wikipedia, n.d., citing Bossio Montes de Oca, 2018"
+  },
+  {
+    "year": 2019,
+    "duringLifetime": true,
+    "title": "Internet para Todos links the Andes to the Amazon",
+    "description": "A joint project by Telefonica, Meta, IDB Invest, and CAF brings 4G to previously unconnected rural areas, symbolically launched with a live video call between Moya (Junin, Andes) and Atalaya (Ucayali, Amazon).",
+    "citation": "Telefonica, 2019; BID Invest, 2020"
+  },
+  {
+    "year": 2020,
+    "duringLifetime": true,
+    "title": "Aprendo en Casa: the pandemic exposes the digital divide",
+    "description": "The Ministry of Education launches a nationwide remote-learning strategy, starkly exposing which households had reliable internet access and which did not.",
+    "citation": "El Comercio, 2021"
+  },
+  {
+    "year": 2021,
+    "duringLifetime": true,
+    "title": "Pronatel brings free WiFi to rural public squares",
+    "description": "The national telecommunications programme installs free WiFi in rural public squares, first in Lima and Cusco, then expanding to Apurimac, Ayacucho, and Huancavelica.",
+    "citation": "El Peruano, 2021"
+  },
+  {
+    "year": 2024,
+    "duringLifetime": true,
+    "title": "Fibre optic overtakes other fixed connections",
+    "description": "Over 70 percent of Peru's fixed internet connections now run on fibre optic (2,780,000 connections, up from just 200,000 in 2019), and digital wallets like Yape move billions of soles a year.",
+    "citation": "Wikipedia, n.d., citing OSIPTEL via gob.pe, 2024; Gestion, 2025"
+  },
+  {
+    "year": 2026,
+    "duringLifetime": true,
+    "title": "Pronatel connects Arequipa",
+    "description": "Pronatel announces fibre optic and free public WiFi for 252 towns across the Arequipa region, part of the continuing effort to close the rural digital divide.",
+    "citation": "Radio Nacional del Peru, 2026"
+  }
+]

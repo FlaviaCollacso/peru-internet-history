@@ -1,0 +1,47 @@
+[
+  {
+    "programa": "Plan Huascaran",
+    "anioInicio": 2001,
+    "entidad": "Ministry of Education (MINEDU)",
+    "regiones": ["Junin", "nationwide rural schools"],
+    "alcance": "101 rural schools and 500 urban-marginal schools targeted for computers, internet access, and VSAT antennas",
+    "notas": "Launched from a school in Huacrapuquio, Junin, deliberately outside Lima. Widely criticised for prioritising hardware delivery over actual connectivity infrastructure and teacher training.",
+    "citation": "Rimactampu, 2015"
+  },
+  {
+    "programa": "National Fibre-Optic Backbone (Red Dorsal Nacional de Fibra Optica)",
+    "anioInicio": 2012,
+    "entidad": "Ministry of Transport and Communications (MTC) / Azteca Comunicaciones Peru",
+    "regiones": ["nationwide", "22 regional capitals", "180 provincial capitals"],
+    "alcance": "Over 13,000 km of fibre-optic cable, concession contract signed in 2014 for USD 333 million",
+    "notas": "Established by Law No. 29904 (2012), regulated by Supreme Decree No. 014-2013-MTC. The physical backbone that later made rural broadband programmes possible.",
+    "citation": "Congreso de la Republica del Peru, 2012; Ministerio de Transportes y Comunicaciones, 2013"
+  },
+  {
+    "programa": "Internet para Todos (IPT)",
+    "anioInicio": 2019,
+    "entidad": "Telefonica / Meta (Facebook) / IDB Invest / CAF",
+    "regiones": ["Junin (Andes)", "Ucayali (Amazon)", "19,000+ rural localities nationwide"],
+    "alcance": "Over 3.8 million people connected across more than 19,000 rural localities, 2,700+ 4G stations",
+    "notas": "Symbolically launched on 28 June 2019 with a live video call between Moya (Junin) and Atalaya (Ucayali), connecting an Andean town with an Amazonian one for the first time.",
+    "citation": "Telefonica, 2019; BID Invest, 2020; Internet para Todos, n.d."
+  },
+  {
+    "programa": "Pronatel EPAD (Espacios Publicos de Acceso Digital)",
+    "anioInicio": 2021,
+    "entidad": "Ministry of Transport and Communications (MTC) / Pronatel",
+    "regiones": ["Lima", "Cusco", "Apurimac", "Ayacucho", "Huancavelica"],
+    "alcance": "First 362 rural public squares connected, expanded in May 2021 to 223 rural localities across four regions, benefiting over 180,000 people",
+    "notas": "Provides free WiFi in rural public squares, reaching areas without commercial cafes or shopping centres.",
+    "citation": "El Peruano, 2021"
+  },
+  {
+    "programa": "Arequipa regional connectivity project",
+    "anioInicio": 2026,
+    "entidad": "Pronatel",
+    "regiones": ["Arequipa"],
+    "alcance": "252 towns connected via 2,800 km of fibre optic and 224 free public WiFi spaces, benefiting over 141,000 people, including 268 schools, 121 health posts, and 53 police stations",
+    "notas": "An active, ongoing project at the time of writing, showing the rural digital-divide effort is still in progress.",
+    "citation": "Radio Nacional del Peru, 2026"
+  }
+]

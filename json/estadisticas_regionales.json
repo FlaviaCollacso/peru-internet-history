@@ -1,0 +1,45 @@
+{
+  "comparacionRegional": [
+    {
+      "region": "Lima Metropolitana",
+      "hogaresConInternet": 80,
+      "poblacionUsuaria": 92,
+      "accesoViaCelular": 92,
+      "hogaresConComputadora": 53.6
+    },
+    {
+      "region": "Resto urbano",
+      "hogaresConInternet": 62,
+      "poblacionUsuaria": 89,
+      "accesoViaCelular": 89,
+      "hogaresConComputadora": 41.3
+    },
+    {
+      "region": "Area rural",
+      "hogaresConInternet": 24,
+      "poblacionUsuaria": 57,
+      "accesoViaCelular": 87,
+      "hogaresConComputadora": null
+    }
+  ],
+  "unidad": "percent",
+  "fuenteComparacion": "Instituto Nacional de Estadistica e Informatica (INEI), 2024, 2025a, 2025b",
+  "estadisticasDestacadas": [
+    {
+      "id": "fibra_optica",
+      "valor": 70,
+      "unidad": "percent",
+      "etiqueta": "of fixed internet connections now run on fibre optic",
+      "detalle": "2,780,000 fibre connections in 2024, up from 200,000 in 2019",
+      "citation": "Wikipedia, n.d., citing OSIPTEL via gob.pe, 2024"
+    },
+    {
+      "id": "billeteras_digitales",
+      "valor": 1500,
+      "unidad": "millones de soles",
+      "etiqueta": "moved through digital wallets like Yape in 2024",
+      "detalle": "Up from 900 million soles in 2022",
+      "citation": "Wikipedia, n.d., citing Gestion, 2025"
+    }
+  ]
+}
