@@ -7,7 +7,7 @@ function renderEventTemplate(event) {
   return `
     <article class="timeline-event ${badgeClass}" tabindex="0">
       <span class="timeline-event__badge">${badgeText}</span>
-      <h3 class="timeline-event__title">${event.year} \u2014 ${escapeHtml(event.title)}</h3>
+      <h2 class="timeline-event__title">${event.year} \u2014 ${escapeHtml(event.title)}</h2>
       <p class="timeline-event__description">${escapeHtml(event.description)}</p>
       <p class="timeline-event__citation">Citation: ${escapeHtml(event.citation)}</p>
     </article>
