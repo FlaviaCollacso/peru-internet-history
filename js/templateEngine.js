@@ -1,7 +1,6 @@
 import { filterValid, validateEvent } from "./validator.js";
 
 function renderEventTemplate(event) {
-  // --- Branching: choose badge text/class based on duringLifetime ---
   const badgeClass = event.duringLifetime ? "badge-my-life" : "badge-before-me";
   const badgeText = event.duringLifetime ? "1996\u20132026" : "1991\u20131995";
 

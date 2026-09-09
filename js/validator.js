@@ -65,11 +65,6 @@ function validateProgram(program, index) {
   return true;
 }
 
-/**
- * Validates the regional statistics object (a single object, not an array).
- * Required: comparacionRegional (non-empty array of region rows),
- * each row needs region (string) and hogaresConInternet (number).
- */
 function validateStats(stats) {
   const errors = [];
 
@@ -93,10 +88,6 @@ function validateStats(stats) {
   return true;
 }
 
-/**
- * Filters an array of raw JSON entries, keeping only the valid ones,
- * using the given per-entry validator function.
- */
 function filterValid(rawArray, validatorFn) {
   if (!Array.isArray(rawArray)) {
     console.error("[validator] expected an array but got:", rawArray);
@@ -104,6 +95,5 @@ function filterValid(rawArray, validatorFn) {
   }
   return rawArray.filter((entry, index) => validatorFn(entry, index));
 }
-
 
 export { validateEvent, validateProgram, validateStats, filterValid };
