@@ -8,6 +8,13 @@
 </head>
 <body>
 
+  <div id="accessibility-bar">
+    <button id="a11y-font-decrease" aria-label="Decrease font size">A-</button>
+    <button id="a11y-font-reset" aria-label="Reset font size">A</button>
+    <button id="a11y-font-increase" aria-label="Increase font size">A+</button>
+    <button id="a11y-contrast-toggle" aria-label="Toggle high contrast">&#9680; Contrast</button>
+  </div>
+
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header>
@@ -45,7 +52,9 @@
 
   <script type="module">
     import { initTimelinePage } from "./js/templateEngine.js";
+    import { initAccessibilityBar } from "./js/accessibilityBar.js";
     initTimelinePage();
+    initAccessibilityBar();
   </script>
 
 </body>

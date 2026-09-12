@@ -1,21 +1,21 @@
 {
   "comparacionRegional": [
     {
-      "region": "Lima Metropolitana",
+      "region": "Metropolitan Lima",
       "hogaresConInternet": 80,
       "poblacionUsuaria": 92,
       "accesoViaCelular": 92,
       "hogaresConComputadora": 53.6
     },
     {
-      "region": "Resto urbano",
+      "region": "Other urban areas",
       "hogaresConInternet": 62,
       "poblacionUsuaria": 89,
       "accesoViaCelular": 89,
       "hogaresConComputadora": 41.3
     },
     {
-      "region": "Area rural",
+      "region": "Rural areas",
       "hogaresConInternet": 24,
       "poblacionUsuaria": 57,
       "accesoViaCelular": 87,
