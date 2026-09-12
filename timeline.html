@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internet in Peru — My Life Online: Timeline</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <div id="accessibility-bar">
-    <button id="a11y-font-decrease" aria-label="Decrease font size">A-</button>
-    <button id="a11y-font-reset" aria-label="Reset font size">A</button>
-    <button id="a11y-font-increase" aria-label="Increase font size">A+</button>
-    <button id="a11y-contrast-toggle" aria-label="Toggle high contrast">◐ Contrast</button>
-  </div>
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
@@ -37,9 +30,12 @@
       <button data-filter="all" aria-pressed="true">All</button>
     </div>
 
-    <section id="timeline-events" aria-live="polite">
-      <!-- Populated automatically by templateEngine.js -->
-      <p>Loading timeline&hellip;</p>
+    <section id="timeline-events-wrapper" aria-live="polite">
+      <h2 class="sr-only">Timeline events</h2>
+      <div id="timeline-events">
+        <!-- Populated automatically by templateEngine.js -->
+        <p>Loading timeline&hellip;</p>
+      </div>
     </section>
   </main>
 
@@ -47,12 +43,10 @@
     <p>CM1040 Coursework 2 &mdash; Internet in Peru: My Life Online</p>
   </footer>
 
-<script type="module">
-  import { initTimelinePage } from "./js/templateEngine.js";
-  import { initAccessibilityBar } from "./js/accessibilityBar.js";
-  initTimelinePage();
-  initAccessibilityBar();
-</script>
+  <script type="module">
+    import { initTimelinePage } from "./js/templateEngine.js";
+    initTimelinePage();
+  </script>
 
 </body>
 </html>
