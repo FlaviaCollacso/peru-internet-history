@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet in Peru — My Life Online</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="accessibility-bar">
+    <button id="a11y-font-decrease" aria-label="Decrease font size">A-</button>
+    <button id="a11y-font-reset" aria-label="Reset font size">A</button>
+    <button id="a11y-font-increase" aria-label="Increase font size">A+</button>
+    <button id="a11y-contrast-toggle" aria-label="Toggle high contrast">&#9680; Contrast</button>
+  </div>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <h2>Internet in Peru</h2>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="closing-the-gap.html">Closing the gap</a>
+      <a href="peru-today.html">Peru today</a>
+      <a href="sources.html">Sources</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="home-hero">
+      <h1>Internet in Peru: My Life Online</h1>
+      <p class="home-subtitle">1996&ndash;2026 &mdash; 30 years of Peru's internet history, seen through my own life</p>
+      <span class="year-badge">1996</span>
+    </section>
+
+    <section class="home-cards" aria-label="Explore the site">
+      <a class="teaser-card" href="timeline.html">
+        <h2>Before me (1991&ndash;1995)</h2>
+        <p>How the internet started in Peru, from academic beginnings to the country's first public internet cabin.</p>
+      </a>
+      <a class="teaser-card" href="timeline.html">
+        <h2>My life (1996&ndash;2026)</h2>
+        <p>From the year I was born through the mobile boom, the pandemic, and the internet in Peru today.</p>
+      </a>
+      <a class="teaser-card" href="closing-the-gap.html">
+        <h2>Closing the gap</h2>
+        <p>Rural connectivity programmes bringing the internet beyond Lima, from Huascar&aacute;n to Internet para Todos.</p>
+      </a>
+      <a class="teaser-card" href="peru-today.html">
+        <h2>Peru today</h2>
+        <p>Current statistics on Peru's digital divide, fibre-optic growth, and mobile payments.</p>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>CM1040 Coursework 2 &mdash; Internet in Peru: My Life Online</p>
+  </footer>
+
+  <script type="module">
+    import { initAccessibilityBar } from "./js/accessibilityBar.js";
+    initAccessibilityBar();
+  </script>
+
+</body>
+</html>
