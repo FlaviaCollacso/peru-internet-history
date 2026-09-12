@@ -144,6 +144,144 @@ h1 {
   font-weight: 500;
 }
 
+/* ---------- Peru today: comparison table ---------- */
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.stats-table caption {
+  text-align: left;
+  font-size: 0.875rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+body.alt-theme .stats-table caption {
+  color: #cccccc;
+}
+
+.stats-table th,
+.stats-table td {
+  text-align: left;
+  padding: 0.625rem 0.75rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9375rem;
+}
+
+body.alt-theme .stats-table th,
+body.alt-theme .stats-table td {
+  border-bottom-color: #444;
+}
+
+.stats-table thead th {
+  background: #f0f0f0;
+  font-weight: 600;
+}
+
+body.alt-theme .stats-table thead th {
+  background: #222222;
+}
+
+/* Mobile: table becomes stacked cards, never a compressed table
+   (WCAG 1.4.10 Reflow) -- each row turns into its own block, and each
+   cell shows its column name via the data-label attribute. */
+@media (max-width: 480px) {
+  .stats-table thead {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+
+  .stats-table,
+  .stats-table tbody,
+  .stats-table tr,
+  .stats-table th,
+  .stats-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .stats-table tr {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  body.alt-theme .stats-table tr {
+    border-color: #ffffff;
+  }
+
+  .stats-table th[scope="row"] {
+    font-size: 1rem;
+    border-bottom: none;
+    padding-bottom: 0.25rem;
+  }
+
+  .stats-table td {
+    border-bottom: none;
+    padding: 0.25rem 0;
+  }
+
+  .stats-table td::before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+  }
+}
+
+/* ---------- Peru today: highlighted stats ---------- */
+
+#stats-highlights-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+body.alt-theme .stat-card {
+  border-color: #ffffff;
+}
+
+.stat-card__value {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 0 0.375rem;
+}
+
+.stat-card__label {
+  font-size: 0.9375rem;
+  margin: 0 0 0.375rem;
+}
+
+.stat-card__detail {
+  font-size: 0.8125rem;
+  color: #555;
+  margin: 0 0 0.5rem;
+}
+
+body.alt-theme .stat-card__detail {
+  color: #cccccc;
+}
+
+.stat-card__citation {
+  font-size: 0.75rem;
+  color: #555;
+  margin: 0;
+}
+
+body.alt-theme .stat-card__citation {
+  color: #cccccc;
+}
+
 /* ---------- Intro text ---------- */
 
 .intro-text {

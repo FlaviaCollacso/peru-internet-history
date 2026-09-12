@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet in Peru — Peru Today</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="accessibility-bar">
+    <button id="a11y-font-decrease" aria-label="Decrease font size">A-</button>
+    <button id="a11y-font-reset" aria-label="Reset font size">A</button>
+    <button id="a11y-font-increase" aria-label="Increase font size">A+</button>
+    <button id="a11y-contrast-toggle" aria-label="Toggle high contrast">&#9680; Contrast</button>
+  </div>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <h2>Internet in Peru</h2>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="closing-the-gap.html">Closing the gap</a>
+      <a href="peru-today.html" aria-current="page">Peru today</a>
+      <a href="sources.html">Sources</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Peru today: the digital divide in numbers</h1>
+    <p class="intro-text">
+      A decade of rural connectivity programmes has narrowed the gap between Lima and the rest of the country
+      &mdash; but a real gap remains. The table and figures below, drawn from the national statistics agency
+      (INEI) and industry reporting, show where things stand right now.
+    </p>
+
+    <section id="stats-table-wrapper" aria-live="polite">
+      <h2 class="sr-only">Regional comparison table</h2>
+      <div id="stats-table-container">
+        <p>Loading statistics&hellip;</p>
+      </div>
+    </section>
+
+    <section id="stats-highlights-wrapper" aria-live="polite">
+      <h2 class="sr-only">Key statistics</h2>
+      <div id="stats-highlights-container">
+        <p>Loading&hellip;</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>CM1040 Coursework 2 &mdash; Internet in Peru: My Life Online</p>
+  </footer>
+
+  <script type="module">
+    import { initPeruTodayPage } from "./js/statsEngine.js";
+    import { initAccessibilityBar } from "./js/accessibilityBar.js";
+    initPeruTodayPage();
+    initAccessibilityBar();
+  </script>
+
+</body>
+</html>
