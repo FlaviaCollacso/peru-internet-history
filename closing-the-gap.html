@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet in Peru — Closing the Gap</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="accessibility-bar">
+    <button id="a11y-font-decrease" aria-label="Decrease font size">A-</button>
+    <button id="a11y-font-reset" aria-label="Reset font size">A</button>
+    <button id="a11y-font-increase" aria-label="Increase font size">A+</button>
+    <button id="a11y-contrast-toggle" aria-label="Toggle high contrast">&#9680; Contrast</button>
+  </div>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <h2>Internet in Peru</h2>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="closing-the-gap.html" aria-current="page">Closing the gap</a>
+      <a href="peru-today.html">Peru today</a>
+      <a href="sources.html">Sources</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Closing the gap: rural connectivity programmes</h1>
+    <p class="intro-text">
+      Fibre optic and mobile coverage reached Lima first &mdash; but closing the digital divide with the rest of
+      the country has taken a series of deliberate state and public-private programmes, from a rural schools
+      initiative launched in the Andes to a fibre-optic backbone connecting every region. The five programmes
+      below trace that effort from 2001 to the present.
+    </p>
+
+    <section id="programs-wrapper" aria-live="polite">
+      <h2 class="sr-only">Rural connectivity programmes</h2>
+      <div id="programs-list">
+        <p>Loading programmes&hellip;</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>CM1040 Coursework 2 &mdash; Internet in Peru: My Life Online</p>
+  </footer>
+
+  <script type="module">
+    import { initClosingTheGapPage } from "./js/programsEngine.js";
+    import { initAccessibilityBar } from "./js/accessibilityBar.js";
+    initClosingTheGapPage();
+    initAccessibilityBar();
+  </script>
+
+</body>
+</html>

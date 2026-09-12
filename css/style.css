@@ -144,6 +144,73 @@ h1 {
   font-weight: 500;
 }
 
+/* ---------- Intro text ---------- */
+
+.intro-text {
+  max-width: 45rem; /* ~720px, per design spec */
+  margin: 0 auto 1.5rem;
+}
+
+/* ---------- Closing the gap: programme cards ---------- */
+
+#programs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.program-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.program-card:focus-visible {
+  outline: 2px solid #0057ff;
+  outline-offset: 2px;
+}
+
+body.alt-theme .program-card {
+  border-color: #ffffff;
+}
+
+.program-card__year {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.125rem 0.625rem;
+  border-radius: 12px;
+  background: #f0f0f0;
+  margin-bottom: 0.5rem;
+}
+
+body.alt-theme .program-card__year {
+  background: #222222;
+  color: #ffffff;
+}
+
+.program-card__title {
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem;
+}
+
+.program-card__entity,
+.program-card__regions,
+.program-card__scope,
+.program-card__notes {
+  font-size: 0.9375rem;
+  margin: 0 0 0.5rem;
+}
+
+.program-card__citation {
+  font-size: 0.75rem;
+  color: #555;
+  margin: 0;
+}
+
+body.alt-theme .program-card__citation {
+  color: #cccccc;
+}
+
 /* ---------- Home page ---------- */
 
 .home-hero {
