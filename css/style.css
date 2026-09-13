@@ -484,7 +484,12 @@ body.alt-theme .stat-card__citation {
   display: block;
   width: 100%;
   max-width: 320px;
-  height: auto; /* preserves each image's real proportions -- no forced crop */
+  height: 220px; /* fixed height so every card's image area looks consistent;
+                     tall images (like the Huascaran clipping) crop from the
+                     bottom, keeping the top visible -- the lightbox button
+                     still opens the full, uncropped original */
+  object-fit: cover;
+  object-position: top;
   border-radius: 8px;
   margin-bottom: 0.75rem;
 }
