@@ -327,8 +327,10 @@ body.alt-theme .stats-table td {
 }
 
 .stats-table thead th {
-  background: var(--color-table-shade);
-  color: var(--text-color); /* flips to white automatically in high-contrast mode */
+  background: #53565A; /* Pantone Cool Gray 11C -- a darker shade of your Cool Gray 7C,
+                           chosen so white text passes contrast (7.4:1); the original 7C
+                           only gives ~2.9:1 with white text, which fails WCAG AA */
+  color: #ffffff;
   font-weight: 600;
 }
 
