@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internet in Peru — My Life Online</title>
+  <meta name="description" content="An interactive site tracing the history of the internet in Peru from 1991 to 2026, seen through the author's own life, with a timeline, rural connectivity programmes, and current digital-divide statistics.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,7 +19,10 @@
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header>
-    <h2>Internet in Peru</h2>
+    <h2 class="site-logo">
+      <img class="site-logo__image" src="img/Logo.png" alt="">
+      <span class="site-logo__text">Internet in Peru</span>
+    </h2>
     <nav aria-label="Main navigation">
       <a href="index.html" aria-current="page">Home</a>
       <a href="timeline.html">Timeline</a>
@@ -33,6 +37,15 @@
       <h1>Internet in Peru: My Life Online</h1>
       <p class="home-subtitle">1996&ndash;2026 &mdash; 30 years of Peru's internet history, seen through my own life</p>
       <span class="year-badge">1996</span>
+    </section>
+
+    <section class="home-video" aria-label="Introductory video">
+      <h2 class="sr-only">Watch: Peru's internet journey</h2>
+      <video controls preload="metadata" class="home-video__player">
+        <source src="img/Peru_Internet_Journey.mp4" type="video/mp4">
+        Your browser does not support embedded video. You can find this project's video summary in the
+        <code>img</code> folder as <code>Peru_Internet_Journey.mp4</code>.
+      </video>
     </section>
 
     <section class="home-cards" aria-label="Explore the site">

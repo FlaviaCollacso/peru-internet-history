@@ -14,12 +14,27 @@ import { filterValid, validateProgram } from "./validator.js";
 
 /**
  * Renders a single rural connectivity programme into an HTML string.
+ * BRANCHING: programmes launched before the national fibre backbone was
+ * usable (2015) are labelled "Foundational programme"; later ones,
+ * which built on that infrastructure, are labelled "Recent programme".
+ * This mirrors the same before/during branching pattern used for events
+ * in templateEngine.js, applied to a different field and threshold.
  */
 function renderProgramTemplate(program) {
   const regionList = program.regiones.join(", ");
 
+  const isFoundational = program.anioInicio < 2015;
+  const statusClass = isFoundational ? "program-card--foundational" : "program-card--recent";
+  const statusText = isFoundational ? "Foundational programme" : "Recent programme";
+
+  const imageHtml = program.imagen
+    ? `<img class="program-card__image" src="img/${encodeURIComponent(program.imagen)}" alt="${escapeHtml(program.imagenAlt || "")}">`
+    : "";
+
   return `
-    <article class="program-card" tabindex="0">
+    <article class="program-card ${statusClass}" tabindex="0">
+      ${imageHtml}
+      <span class="program-card__status">${statusText}</span>
       <span class="program-card__year">${program.anioInicio}</span>
       <h2 class="program-card__title">${escapeHtml(program.programa)}</h2>
       <p class="program-card__entity">${escapeHtml(program.entidad)}</p>

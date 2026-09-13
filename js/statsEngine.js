@@ -78,6 +78,7 @@ function renderHighlightStats(stats) {
     .map(
       (stat) => `
         <div class="stat-card">
+          ${stat.imagen ? `<img class="stat-card__image" src="img/${encodeURIComponent(stat.imagen)}" alt="${escapeHtml(stat.imagenAlt || "")}">` : ""}
           <p class="stat-card__value">${formatStatValue(stat)}</p>
           <p class="stat-card__label">${escapeHtml(stat.etiqueta)}</p>
           <p class="stat-card__detail">${escapeHtml(stat.detalle)}</p>

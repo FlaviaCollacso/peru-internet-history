@@ -1,3 +1,14 @@
+/**
+ * templateEngine.js
+ * CM1040 Coursework 2 -- Custom template engine
+ *
+ * Demonstrates the three CM1040 Topic 6 concepts explicitly:
+ *   1. Iteration      -- loop over an array of JSON objects
+ *   2. Branching       -- render different markup depending on a field's value
+ *   3. Automatic update -- re-render into the DOM when the underlying data
+ *                          or filter changes, without a full page reload
+ */
+
 import { filterValid, validateEvent } from "./validator.js";
 
 /**
@@ -10,8 +21,14 @@ function renderEventTemplate(event) {
   const badgeClass = event.duringLifetime ? "badge-my-life" : "badge-before-me";
   const badgeText = event.duringLifetime ? "1996\u20132026" : "1991\u20131995";
 
+  // --- Branching: only render an <img> when the event actually has one ---
+  const imageHtml = event.image
+    ? `<img class="timeline-event__image" src="img/${encodeURIComponent(event.image)}" alt="${escapeHtml(event.imageAlt || "")}">`
+    : "";
+
   return `
     <article class="timeline-event ${badgeClass}" tabindex="0">
+      ${imageHtml}
       <span class="timeline-event__badge">${badgeText}</span>
       <h2 class="timeline-event__title">${event.year} \u2014 ${escapeHtml(event.title)}</h2>
       <p class="timeline-event__description">${escapeHtml(event.description)}</p>

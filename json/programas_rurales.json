@@ -6,7 +6,9 @@
     "regiones": ["Junin", "nationwide rural schools"],
     "alcance": "101 rural schools and 500 urban-marginal schools targeted for computers, internet access, and VSAT antennas",
     "notas": "Launched from a school in Huacrapuquio, Junin, deliberately outside Lima. Widely criticised for prioritising hardware delivery over actual connectivity infrastructure and teacher training.",
-    "citation": "Rimactampu, 2015"
+    "citation": "Rimactampu, 2015",
+    "imagen": "Caretas_2003_Huascaran.png",
+    "imagenAlt": "Scanned 2003 Caretas magazine article discussing Plan Huascaran"
   },
   {
     "programa": "National Fibre-Optic Backbone (Red Dorsal Nacional de Fibra Optica)",
@@ -24,7 +26,9 @@
     "regiones": ["Junin (Andes)", "Ucayali (Amazon)", "19,000+ rural localities nationwide"],
     "alcance": "Over 3.8 million people connected across more than 19,000 rural localities, 2,700+ 4G stations",
     "notas": "Symbolically launched on 28 June 2019 with a live video call between Moya (Junin) and Atalaya (Ucayali), connecting an Andean town with an Amazonian one for the first time.",
-    "citation": "Telefonica, 2019; BID Invest, 2020; Internet para Todos, n.d."
+    "citation": "Telefonica, 2019; BID Invest, 2020; Internet para Todos, n.d.",
+    "imagen": "Lanzamiento_IPT_Moya.jpg",
+    "imagenAlt": "Launch event of Internet para Todos in Moya, Junin"
   },
   {
     "programa": "Pronatel EPAD (Espacios Publicos de Acceso Digital)",

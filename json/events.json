@@ -18,7 +18,9 @@
     "duringLifetime": false,
     "title": "Peru's first public internet cabin opens",
     "description": "At the Ricardo Palma Cultural Centre in Miraflores, forty computers (20 PCs, 20 Macintosh) let anyone learn to get online for free for the first time. The same year, the state privatises CPTSA and Entel, sold to the Telefonica del Peru consortium.",
-    "citation": "El Comercio, 2017; RPP Noticias, 2022; PUCP, 2022"
+    "citation": "El Comercio, 2017; RPP Noticias, 2022; PUCP, 2022",
+    "image": "Cabina_90.png",
+    "imageAlt": "Rows of desktop computers inside a 1990s Peruvian internet cabin"
   },
   {
     "year": 1995,
@@ -32,7 +34,9 @@
     "duringLifetime": true,
     "title": "I am born, and Frecuencia Primera goes on air",
     "description": "The RCP publishes Peru's first digital book and Frecuencia Primera, the country's first internet radio station, goes on air, with listeners requesting live internet searches and receiving results on a floppy disk.",
-    "citation": "Wikipedia, \"Internet en el Peru,\" n.d."
+    "citation": "Wikipedia, \"Internet en el Peru,\" n.d.",
+    "image": "Disquete.png",
+    "imageAlt": "Illustration of a floppy disk"
   },
   {
     "year": 1999,

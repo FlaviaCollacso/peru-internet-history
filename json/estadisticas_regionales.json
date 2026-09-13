@@ -31,7 +31,9 @@
       "unidad": "percent",
       "etiqueta": "of fixed internet connections now run on fibre optic",
       "detalle": "2,780,000 fibre connections in 2024, up from 200,000 in 2019",
-      "citation": "Wikipedia, n.d., citing OSIPTEL via gob.pe, 2024"
+      "citation": "Wikipedia, n.d., citing OSIPTEL via gob.pe, 2024",
+      "imagen": "Grafico_crecimiento_fibra_optica.png",
+      "imagenAlt": "Chart showing fibre-optic connection growth in Peru from 2019 to 2024"
     },
     {
       "id": "billeteras_digitales",
