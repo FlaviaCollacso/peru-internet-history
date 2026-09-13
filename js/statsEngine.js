@@ -26,6 +26,52 @@ function formatStatValue(stat) {
 }
 
 /**
+ * DYNAMIC CHART (coursework extension): builds a bar chart as inline SVG,
+ * generated entirely from a JSON array (ITERATION over chartData) rather
+ * than a static picture of someone else's chart. Bar heights are scaled
+ * at runtime against the largest value in the dataset, so the chart
+ * would redraw itself correctly even if the JSON numbers changed.
+ */
+function renderFibreChart(dataPoints, citation) {
+  const width = 560;
+  const height = 220;
+  const padding = 34;
+  const chartWidth = width - padding * 2;
+  const chartHeight = height - padding * 2;
+  const maxValue = Math.max(...dataPoints.map((d) => d.conexiones));
+  const slotWidth = chartWidth / dataPoints.length;
+  const barWidth = slotWidth - 14;
+
+  const bars = dataPoints
+    .map((d, i) => {
+      const barHeight = (d.conexiones / maxValue) * chartHeight;
+      const x = padding + i * slotWidth + 7;
+      const y = height - padding - barHeight;
+      const valueLabel = `${(d.conexiones / 1000000).toFixed(2)}M`;
+      const a11yLabel = `${d.anio}: ${d.conexiones.toLocaleString("en-US")} fibre-optic connections`;
+      return `
+        <g role="img" aria-label="${escapeHtml(a11yLabel)}">
+          <rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" fill="var(--color-highlight)" rx="3"></rect>
+          <text x="${x + barWidth / 2}" y="${y - 6}" font-size="11" text-anchor="middle" fill="var(--text-color)">${valueLabel}</text>
+          <text x="${x + barWidth / 2}" y="${height - padding + 16}" font-size="11" text-anchor="middle" fill="var(--text-color)">${d.anio}</text>
+        </g>
+      `;
+    })
+    .join("");
+
+  return `
+    <figure class="fibre-chart-figure">
+      <svg viewBox="0 0 ${width} ${height}" class="fibre-chart" role="img"
+           aria-label="Bar chart: fibre-optic connections in Peru grew from 200,000 in 2019 to 2.78 million in 2024">
+        <line x1="${padding}" y1="${height - padding}" x2="${width - padding}" y2="${height - padding}" stroke="var(--text-color)" stroke-width="1"></line>
+        ${bars}
+      </svg>
+      <figcaption class="fibre-chart-figure__caption">Fibre-optic connections in Peru, 2019&ndash;2024. Citation: ${escapeHtml(citation)}</figcaption>
+    </figure>
+  `;
+}
+
+/**
  * Builds the accessible comparison table (BRANCHING: null values in the
  * data -- e.g. no computer-ownership figure for rural areas -- render as
  * "N/A" instead of breaking the layout).
@@ -70,11 +116,14 @@ function renderComparisonTable(stats) {
 }
 
 /**
- * Renders a stat's image, wrapping it in a click-to-enlarge trigger when
- * the JSON entry is flagged "imagenZoomable" (used for content-rich
- * images like charts, where a reader may want the full-size version).
+ * Renders a stat's visual: a dynamic chart when the entry has chartData
+ * (BRANCHING), otherwise a static image if present, wrapped in a
+ * click-to-enlarge trigger when flagged "imagenZoomable".
  */
 function renderStatImage(stat) {
+  if (stat.chartData) {
+    return renderFibreChart(stat.chartData, stat.chartCitation || "");
+  }
   if (!stat.imagen) {
     return "";
   }

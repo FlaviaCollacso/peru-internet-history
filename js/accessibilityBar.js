@@ -1,7 +1,6 @@
-
 const FONT_STEP_REM = 0.1;
-const FONT_MIN_REM = 0.7;   // was 0.9 -- too close to default, gave almost no room
-const FONT_MAX_REM = 1.8;   // was 1.6
+const FONT_MIN_REM = 0.7;  
+const FONT_MAX_REM = 1.8;   
 const DEFAULT_FONT_REM = 1.0;
 
 let currentFontRem = DEFAULT_FONT_REM;

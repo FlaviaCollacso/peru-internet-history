@@ -31,10 +31,6 @@ function validateEvent(event, index) {
   return true;
 }
 
-/**
- * Validates a single rural connectivity programme object.
- * Required fields: programa, anioInicio, entidad, alcance, citation.
- */
 function validateProgram(program, index) {
   const errors = [];
 

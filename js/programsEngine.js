@@ -1,25 +1,5 @@
-/**
- * programsEngine.js
- * CM1040 Coursework 2 -- Renders programas_rurales.json onto the
- * "Closing the gap" page.
- *
- * This reuses the same pattern already demonstrated in templateEngine.js
- * (Topic 6: template engines -- iteration + validation before rendering),
- * applied to a second, independent JSON dataset. Keeping it in its own
- * module (rather than piling everything into templateEngine.js) mirrors
- * the folder-per-concern organisation the course expects.
- */
-
 import { filterValid, validateProgram } from "./validator.js";
 
-/**
- * Renders a single rural connectivity programme into an HTML string.
- * BRANCHING: programmes launched before the national fibre backbone was
- * usable (2015) are labelled "Foundational programme"; later ones,
- * which built on that infrastructure, are labelled "Recent programme".
- * This mirrors the same before/during branching pattern used for events
- * in templateEngine.js, applied to a different field and threshold.
- */
 function renderProgramTemplate(program) {
   const regionList = program.regiones.join(", ");
 
@@ -30,8 +10,7 @@ function renderProgramTemplate(program) {
   const imageMarkup = program.imagen
     ? `<img class="program-card__image" src="img/${encodeURIComponent(program.imagen)}" alt="${escapeHtml(program.imagenAlt || "")}"${program.imagenWidth ? ` width="${program.imagenWidth}" height="${program.imagenHeight}"` : ""}>`
     : "";
-  // Branching: only content-rich images (flagged "imagenZoomable" in the
-  // JSON) get wrapped in a click-to-enlarge trigger.
+ 
   const imageHtml = !program.imagen
     ? ""
     : program.imagenZoomable
@@ -53,11 +32,6 @@ function renderProgramTemplate(program) {
   `;
 }
 
-/**
- * Iterates over the validated programmes and joins their rendered
- * templates into a single HTML string (the ITERATION step, same
- * concept as renderEventList in templateEngine.js).
- */
 function renderProgramList(programs) {
   if (programs.length === 0) {
     return `<p class="programs-empty">No programmes to display.</p>`;
@@ -71,11 +45,6 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-/**
- * Entry point: fetches programas_rurales.json, validates it, and
- * renders the programme cards. Call this once from the page's
- * script after the DOM is ready.
- */
 async function initClosingTheGapPage() {
   const containerEl = document.querySelector("#programs-list");
 
