@@ -8,7 +8,10 @@
     "notas": "Launched from a school in Huacrapuquio, Junin, deliberately outside Lima. Widely criticised for prioritising hardware delivery over actual connectivity infrastructure and teacher training.",
     "citation": "Rimactampu, 2015",
     "imagen": "Caretas_2003_Huascaran.jpg",
-    "imagenAlt": "Scanned 2003 Caretas magazine article discussing Plan Huascaran"
+    "imagenAlt": "Scanned 2003 Caretas magazine article discussing Plan Huascaran",
+    "imagenWidth": 800,
+    "imagenHeight": 1797,
+    "imagenZoomable": true
   },
   {
     "programa": "National Fibre-Optic Backbone (Red Dorsal Nacional de Fibra Optica)",
@@ -28,7 +31,9 @@
     "notas": "Symbolically launched on 28 June 2019 with a live video call between Moya (Junin) and Atalaya (Ucayali), connecting an Andean town with an Amazonian one for the first time.",
     "citation": "Telefonica, 2019; BID Invest, 2020; Internet para Todos, n.d.",
     "imagen": "Lanzamiento_IPT_Moya.jpg",
-    "imagenAlt": "Launch event of Internet para Todos in Moya, Junin"
+    "imagenAlt": "Launch event of Internet para Todos in Moya, Junin",
+    "imagenWidth": 800,
+    "imagenHeight": 600
   },
   {
     "programa": "Pronatel EPAD (Espacios Publicos de Acceso Digital)",

@@ -23,7 +23,7 @@ function renderEventTemplate(event) {
 
   // --- Branching: only render an <img> when the event actually has one ---
   const imageHtml = event.image
-    ? `<img class="timeline-event__image" src="img/${encodeURIComponent(event.image)}" alt="${escapeHtml(event.imageAlt || "")}">`
+    ? `<img class="timeline-event__image" src="img/${encodeURIComponent(event.image)}" alt="${escapeHtml(event.imageAlt || "")}"${event.imageWidth ? ` width="${event.imageWidth}" height="${event.imageHeight}"` : ""}>`
     : "";
 
   return `

@@ -33,7 +33,10 @@
       "detalle": "2,780,000 fibre connections in 2024, up from 200,000 in 2019",
       "citation": "Wikipedia, n.d., citing OSIPTEL via gob.pe, 2024",
       "imagen": "Grafico_crecimiento_fibra_optica.png",
-      "imagenAlt": "Chart showing fibre-optic connection growth in Peru from 2019 to 2024"
+      "imagenAlt": "Chart showing fibre-optic connection growth in Peru from 2019 to 2024",
+      "imagenWidth": 5922,
+      "imagenHeight": 3072,
+      "imagenZoomable": true
     },
     {
       "id": "billeteras_digitales",
@@ -44,7 +47,9 @@
       "citation": "Wikipedia, n.d., citing Gestion, 2025",
       "imagen": "yape.jpg",
       "imagenAlt": "The Yape digital wallet app",
-      "imagenCitation": "Peru21, n.d."
+      "imagenCitation": "Peru21, n.d.",
+      "imagenWidth": 1090,
+      "imagenHeight": 613
     }
   ]
 }

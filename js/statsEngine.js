@@ -70,6 +70,21 @@ function renderComparisonTable(stats) {
 }
 
 /**
+ * Renders a stat's image, wrapping it in a click-to-enlarge trigger when
+ * the JSON entry is flagged "imagenZoomable" (used for content-rich
+ * images like charts, where a reader may want the full-size version).
+ */
+function renderStatImage(stat) {
+  if (!stat.imagen) {
+    return "";
+  }
+  const imageMarkup = `<img class="stat-card__image" src="img/${encodeURIComponent(stat.imagen)}" alt="${escapeHtml(stat.imagenAlt || "")}"${stat.imagenWidth ? ` width="${stat.imagenWidth}" height="${stat.imagenHeight}"` : ""}>`;
+  return stat.imagenZoomable
+    ? `<button type="button" class="zoomable-trigger" aria-label="Click to enlarge image">${imageMarkup}</button>`
+    : imageMarkup;
+}
+
+/**
  * Builds the two (or more) highlighted stat callouts, iterating over
  * estadisticasDestacadas the same way templateEngine.js iterates events.
  */
@@ -78,7 +93,7 @@ function renderHighlightStats(stats) {
     .map(
       (stat) => `
         <div class="stat-card">
-          ${stat.imagen ? `<img class="stat-card__image" src="img/${encodeURIComponent(stat.imagen)}" alt="${escapeHtml(stat.imagenAlt || "")}">` : ""}
+          ${renderStatImage(stat)}
           <p class="stat-card__value">${formatStatValue(stat)}</p>
           <p class="stat-card__label">${escapeHtml(stat.etiqueta)}</p>
           <p class="stat-card__detail">${escapeHtml(stat.detalle)}</p>

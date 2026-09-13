@@ -20,7 +20,9 @@
     "description": "At the Ricardo Palma Cultural Centre in Miraflores, forty computers (20 PCs, 20 Macintosh) let anyone learn to get online for free for the first time. The same year, the state privatises CPTSA and Entel, sold to the Telefonica del Peru consortium.",
     "citation": "El Comercio, 2017; RPP Noticias, 2022; PUCP, 2022",
     "image": "Cabina_90.png",
-    "imageAlt": "Rows of desktop computers inside a 1990s Peruvian internet cabin"
+    "imageAlt": "Rows of desktop computers inside a 1990s Peruvian internet cabin",
+    "imageWidth": 6000,
+    "imageHeight": 3375
   },
   {
     "year": 1995,
@@ -36,7 +38,9 @@
     "description": "The RCP publishes Peru's first digital book and Frecuencia Primera, the country's first internet radio station, goes on air, with listeners requesting live internet searches and receiving results on a floppy disk.",
     "citation": "Wikipedia, \"Internet en el Peru,\" n.d.",
     "image": "Disquete.png",
-    "imageAlt": "Illustration of a floppy disk"
+    "imageAlt": "Illustration of a floppy disk",
+    "imageWidth": 3337,
+    "imageHeight": 3456
   },
   {
     "year": 1999,
