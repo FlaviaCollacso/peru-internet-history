@@ -35,21 +35,24 @@ html {
    escaped space, since the .ttf filenames contain spaces. */
 @font-face {
   font-family: "PolySans Neutral Wide";
-  src: url("../fonts/PolySans%20Neutral%20Wide.ttf") format("truetype");
+  src: url("../fonts/PolySans%20Neutral%20Wide.woff2") format("woff2"),
+       url("../fonts/PolySans%20Neutral%20Wide.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "PolySans Median";
-  src: url("../fonts/PolySans%20Median.ttf") format("truetype");
+  src: url("../fonts/PolySans%20Median.woff2") format("woff2"),
+       url("../fonts/PolySans%20Median.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "PolySans Slim";
-  src: url("../fonts/PolySans%20Slim.ttf") format("truetype");
+  src: url("../fonts/PolySans%20Slim.woff2") format("woff2"),
+       url("../fonts/PolySans%20Slim.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -348,6 +351,12 @@ body.alt-theme .stats-table thead th {
     top: -9999px;
   }
 
+  .stats-table caption {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
   .stats-table,
   .stats-table tbody,
   .stats-table tr,
@@ -404,7 +413,8 @@ body.alt-theme .stats-table thead th {
   display: block;
   width: 100%;
   max-width: 280px;
-  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   margin: 0 auto 0.75rem;
   border-radius: 8px;
 }
@@ -475,7 +485,8 @@ body.alt-theme .stat-card__citation {
   display: block;
   width: 100%;
   max-width: 320px;
-  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 0.75rem;
 }
@@ -746,7 +757,8 @@ h2.timeline-event__title {
   display: block;
   width: 100%;
   max-width: 320px;
-  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 0.75rem;
 }
