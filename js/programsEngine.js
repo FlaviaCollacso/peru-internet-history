@@ -27,9 +27,16 @@ function renderProgramTemplate(program) {
   const statusClass = isFoundational ? "program-card--foundational" : "program-card--recent";
   const statusText = isFoundational ? "Foundational programme" : "Recent programme";
 
-  const imageHtml = program.imagen
-    ? `<img class="program-card__image" src="img/${encodeURIComponent(program.imagen)}" alt="${escapeHtml(program.imagenAlt || "")}">`
+  const imageMarkup = program.imagen
+    ? `<img class="program-card__image" src="img/${encodeURIComponent(program.imagen)}" alt="${escapeHtml(program.imagenAlt || "")}"${program.imagenWidth ? ` width="${program.imagenWidth}" height="${program.imagenHeight}"` : ""}>`
     : "";
+  // Branching: only content-rich images (flagged "imagenZoomable" in the
+  // JSON) get wrapped in a click-to-enlarge trigger.
+  const imageHtml = !program.imagen
+    ? ""
+    : program.imagenZoomable
+    ? `<button type="button" class="zoomable-trigger" aria-label="Click to enlarge image">${imageMarkup}</button>`
+    : imageMarkup;
 
   return `
     <article class="program-card ${statusClass}" tabindex="0">
