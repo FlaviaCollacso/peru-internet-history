@@ -13,31 +13,30 @@ A CM1040 (Web Development) coursework website exploring the history of the inter
 
 ## Project structure
 
-```
+```text
 peru-internet-history/
-├── index.html                   Home page
-├── timeline.html                 Interactive timeline (1991-2026)
-├── closing-the-gap.html          Rural connectivity programmes
-├── peru-today.html               Digital-divide statistics
-├── sources.html                  Licence table, AI note, and full reference list
+├── index.html                       Home page
+├── timeline.html                    Interactive timeline (1991-2026)
+├── closing-the-gap.html             Rural connectivity programmes
+├── peru-today.html                  Digital-divide statistics
+├── sources.html                     Licence table, AI note, and full reference list
 ├── css/
-│   └── style.css                 All page styles: layout, brand palette/typography,
-│                                  accessibility bar, responsive tables, lightbox
+│   └── style.css                    All page styles: layout, brand palette/typography,
+│                                    accessibility bar, responsive tables, lightbox
 ├── js/
-│   ├── validator.js              JSON validation functions (shared by all pages)
-│   ├── templateEngine.js         Renders events.json onto the Timeline page
-│   ├── programsEngine.js         Renders programas_rurales.json onto Closing the Gap
-│   ├── statsEngine.js            Renders estadisticas_regionales.json onto Peru Today
-│   ├── accessibilityBar.js       High-contrast / font-size toggle (every page)
-│   └── lightbox.js               Click-to-enlarge viewer (Closing the Gap, Peru Today)
+│   ├── validator.js                 JSON validation functions (shared by all pages)
+│   ├── templateEngine.js            Renders events.json onto the Timeline page
+│   ├── programsEngine.js            Renders programas_rurales.json onto Closing the Gap
+│   ├── statsEngine.js               Renders estadisticas_regionales.json onto Peru Today
+│   ├── accessibilityBar.js          High-contrast / font-size toggle (every page)
+│   └── lightbox.js                  Click-to-enlarge viewer (Closing the Gap, Peru Today)
 ├── json/
-│   ├── events.json               Timeline data (17 entries, 1991-2026)
-│   ├── programas_rurales.json    5 rural connectivity programmes
-│   └── estadisticas_regionales.json  INEI comparison stats + 2 highlighted figures
-├── img/                           Photos, charts, the logo, and the project video
-├── fonts/                         Licensed PolySans font files (see note below --
-│                                  NOT included in the submitted ZIP)
-└── README.md                      This file
+│   ├── events.json                  Timeline data (17 entries, 1991-2026)
+│   ├── programas_rurales.json       5 rural connectivity programmes
+│   └── estadisticas_regionales.json INEI comparison stats + 2 highlighted figures
+├── img/                             Photos, charts, the logo, and the project video
+├── fonts/                           Typeface files used by the site stylesheet
+└── README.md                        This file
 ```
 
 ## Requirements
@@ -64,10 +63,6 @@ peru-internet-history/
 
 5. To stop the server, click the **"Port: 5500"** button in the VS Code status bar, or close the browser tab and click the Live Server icon again to toggle it off.
 
-## A note on the typeface
-
-The site's headings and body text are set in **PolySans** (Mitrovic, 2020, published by Gradient — see the Sources page for the full citation), licensed through my employer's brand manual. Because that licence is scoped to company use, **the actual font files are not included in this submission's `fonts/` folder**. The CSS is written to fail gracefully: if the licensed `.woff2`/`.ttf` files are absent, every page automatically falls back to **Space Grotesk**, a free alternative with a similar geometric character, so the site still looks and works correctly out of the box.
-
 ## Verifying the JSON validators
 
 Open your browser's developer console (`F12` → **Console** tab) while browsing any page. If an entry in a JSON data file is missing a required field, a warning is logged there and that specific entry is skipped, rather than breaking the whole page — this is the validation behaviour described in the coursework report (Section D: Developing the code).
@@ -89,7 +84,7 @@ Open your browser's developer console (`F12` → **Console** tab) while browsing
 
 ## Known limitations
 
-- This is a static site: there is no backend server or database. The JSON files are static data, read directly by the browser.
+- This is a static site: there is no backend server, database, or server-side application. The JSON files are static data files loaded by the browser using JavaScript. Some content, including the chart, is rendered dynamically on the client side from these JSON files, but the site remains static because all data and code are served as fixed files.
 - The site has been tested in the latest version of Google Chrome, including Chrome DevTools' mobile device emulation. Other modern evergreen browsers should also work, since only standard ES modules, CSS custom properties, and the native `<dialog>` element are used.
 - Two of the original press-photo images required compression before use; if you replace any image in `img/`, keep an eye on file size, as very large uncompressed photos can noticeably slow down page load.
 
@@ -99,4 +94,4 @@ Flavia Victoria Collacso Terrazas — CM1040 Web Development, University of Lond
 
 ## Acknowledgement of AI assistance
 
-Parts of the background research, citation verification, wireframe planning, and code scaffolding for this project were produced with the assistance of an AI language model, under the author's supervision and final decision on every included fact, design choice, and line of code. See the Sources page for the full disclosure statement.
+Part of the preliminary research, citation verification, and partial support for the initial code structure of this project were carried out with the help of an AI language model, under the supervision of the author, who made the final decision regarding each piece of data included. Please see the “Sources” page for the full transparency statement.
