@@ -328,7 +328,7 @@ body.alt-theme .stats-table td {
 
 .stats-table thead th {
   background: var(--color-table-shade);
-  color: #000000; /* required for contrast on this mid-grey -- do not switch to white text here */
+  color: var(--text-color); /* flips to white automatically in high-contrast mode */
   font-weight: 600;
 }
 

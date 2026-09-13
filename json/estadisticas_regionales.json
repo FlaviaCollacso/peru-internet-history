@@ -41,7 +41,10 @@
       "unidad": "millones de soles",
       "etiqueta": "moved through digital wallets like Yape in 2024",
       "detalle": "Up from 900 million soles in 2022",
-      "citation": "Wikipedia, n.d., citing Gestion, 2025"
+      "citation": "Wikipedia, n.d., citing Gestion, 2025",
+      "imagen": "yape.jpg",
+      "imagenAlt": "The Yape digital wallet app",
+      "imagenCitation": "Peru21, n.d."
     }
   ]
 }
